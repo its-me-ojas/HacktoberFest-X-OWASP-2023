@@ -1,3 +1,10 @@
 .App{
   color: rgb(255, 160, 36);
 }
+
+.binStream{
+  width: 100vw;
+  font-size: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
