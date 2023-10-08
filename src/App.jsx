@@ -1,8 +1,10 @@
 import './App.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import hackLogo from './Assets/hacktoberfest-logo.png';
 import owaspLogo from './Assets/logo-owasp.png';
+import MyButton from './Components/button.jsx';
 import 'animate.css';
+import { AiFillDownCircle } from 'react-icons/ai';
 
 function App() {
   const [binaryStream, setBinaryStream] = useState(generateRandomBinaryStream());
@@ -24,6 +26,12 @@ function App() {
     };
   }, []);
 
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
     <section className='hero'>
@@ -36,15 +44,27 @@ function App() {
         <div className="multiply animate__animated animate__rotateIn"> ✖ </div>
         <img src={owaspLogo} alt='OWASP logo' />
       </div>
-      <a href="/" className="button recruit">Register for<br/> Recruitments!</a>
+      <div className='recruit'>
+      <a href="/" class="discoButton"><span>
+          Register for<br/>Recruitments!
+      </span></a>
+      </div>
+      <div className='scroll' onClick={handleClick}>
+        <AiFillDownCircle />
+      </div>
     </section>
-    <section className='about'>
+    <section className='about' ref={ref}>
       <div className='about-box'>
         <h3 className='about-heading'>About Hacktoberfest</h3>
-        <p>
+        <MyButton>
+        <p className='about-content'>
           Hacktoberfest'23 marks the 10th edition of Hacktoberfest, organized by DigitalOcean, a month-long celebration of open-source coding and software Team OWASP provides five open source projects to which you can display and contribute - Web-Dev Tasks, Tech Think Tank, Algorithm Visualiser, Tab Saver Extension and Backend-automation NPM. These projects are widely available for contribution by people from various tech stacks. Hack out four pristine pull/merge requests and win exciting goodies and swags!
         </p>
+        </MyButton>
+
       </div>
+      <a href="/pen/" class="discoButton"><span>Register for HacktoberFest</span></a>
+
     </section>
     </>
   );
