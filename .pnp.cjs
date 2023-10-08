@@ -31,6 +31,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.25"],\
             ["@types/react-dom", "npm:18.2.11"],\
             ["@vitejs/plugin-react-swc", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:3.4.0"],\
+            ["animate.css", "npm:4.1.1"],\
             ["eslint", "npm:8.51.0"],\
             ["eslint-plugin-react", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:7.33.2"],\
             ["eslint-plugin-react-hooks", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:4.6.0"],\
@@ -706,6 +707,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fast-json-stable-stringify", "npm:2.1.0"],\
             ["json-schema-traverse", "npm:0.4.1"],\
             ["uri-js", "npm:4.4.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["animate.css", [\
+        ["npm:4.1.1", {\
+          "packageLocation": "./.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip/node_modules/animate.css/",\
+          "packageDependencies": [\
+            ["animate.css", "npm:4.1.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -1827,6 +1837,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:18.2.25"],\
             ["@types/react-dom", "npm:18.2.11"],\
             ["@vitejs/plugin-react-swc", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:3.4.0"],\
+            ["animate.css", "npm:4.1.1"],\
             ["eslint", "npm:8.51.0"],\
             ["eslint-plugin-react", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:7.33.2"],\
             ["eslint-plugin-react-hooks", "virtual:5813c472b166081270f19413c61f6b96b51033e5fb60f6d4f626a7906ebe94c28d7d2040f76c7521969b2b258c5408076877e11bd0cd5bb065615140587e2189#npm:4.6.0"],\
