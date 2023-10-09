@@ -2,9 +2,10 @@ import './App.css'
 import { useState, useEffect, useRef } from 'react';
 import hackLogo from './Assets/hacktoberfest-logo.png';
 import owaspLogo from './Assets/logo-owasp.png';
-import MyButton from './Components/button.jsx';
+import MyButton from './Components/button/button.jsx';
 import 'animate.css';
 import { AiFillDownCircle } from 'react-icons/ai';
+import Back from './Components/background/background';
 
 function App() {
   const [binaryStream, setBinaryStream] = useState(generateRandomBinaryStream());
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <>
+    <Back />
     <section className='hero'>
       <div className='binStream'>
         {binaryStream}
@@ -55,7 +57,9 @@ function App() {
     </section>
     <section className='about' ref={ref}>
       <div className='about-box'>
-        <h3 className='about-heading'>About Hacktoberfest</h3>
+        <div className="head">
+          <h3 className='about-heading'>About Hacktoberfest</h3>
+        </div>
         <MyButton>
         <p className='about-content'>
           Hacktoberfest'23 marks the 10th edition of Hacktoberfest, organized by DigitalOcean, a month-long celebration of open-source coding and software Team OWASP provides five open source projects to which you can display and contribute - Web-Dev Tasks, Tech Think Tank, Algorithm Visualiser, Tab Saver Extension and Backend-automation NPM. These projects are widely available for contribution by people from various tech stacks. Hack out four pristine pull/merge requests and win exciting goodies and swags!
