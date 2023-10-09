@@ -6,6 +6,17 @@ import MyButton from './Components/button/button.jsx';
 import 'animate.css';
 import { AiFillDownCircle } from 'react-icons/ai';
 import Back from './Components/background/background';
+import pc from './Assets/pc.png';
+import Repo from './Components/repo-card/repo';
+import contribute from './Assets/contribute.png';
+import branch from './Assets/branch.png';
+import flower from './Assets/flower.png';
+import jio from "./Assets/sponsors/jio.png"
+import git from "./Assets/sponsors/Git.png"
+import mlh from "./Assets/sponsors/MLH.png"
+import postman from "./Assets/sponsors/Postman.png"
+import polygon from "./Assets/sponsors/polygon.png"
+import redbull from "./Assets/sponsors/redbull.png"
 
 function App() {
   const [binaryStream, setBinaryStream] = useState(generateRandomBinaryStream());
@@ -33,6 +44,11 @@ function App() {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const jiostyle = {
+    position: "relative", 
+    top:"-2rem",
+    padding: "0rem"
+  };
   return (
     <>
     <Back />
@@ -68,7 +84,56 @@ function App() {
 
       </div>
       <a href="/pen/" class="discoButton"><span>Register for HacktoberFest</span></a>
+    </section>
 
+    <section className='projects'>
+      <h3 className='about-heading openSrc'>Our Open Source Projects</h3>
+      <div className="repos">
+        <Repo src={branch} alt="repo1" title="lorem ipsum">
+        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        </Repo>
+        <Repo src={contribute} alt="repo1" title="lorem ipsum">
+        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        </Repo>
+        <Repo src={pc} alt="repo1" title="lorem ipsum">
+        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        </Repo>
+        <Repo src={flower} alt="repo1" title="lorem ipsum">
+        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        </Repo>
+      </div>
+    </section>
+    
+    <section className="sponsors">
+      <div className="sponsorsDiv">
+      <div className="about-heading">
+          Our Past Sponsors
+          </div>
+      <div class="cards">
+          <figure class="card2">
+              <img src = {jio} style={jiostyle}></img>
+          </figure>
+          <figure class="card2">
+
+                  <img src= {git}/>
+
+          </figure>
+          <figure class="card2">
+
+                  <img src= {mlh}/>
+
+          </figure>
+          <figure class="card2">
+                  <img src= {postman}/>
+          </figure>
+          <figure class="card2">
+                  <img src= {polygon }/>
+          </figure>
+          <figure class="card2">
+                  <img src=  {redbull } />
+          </figure>
+      </div>
+      </div>
     </section>
     </>
   );
