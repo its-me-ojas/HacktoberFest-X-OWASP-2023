@@ -17,6 +17,7 @@ import mlh from "./Assets/sponsors/MLH.png"
 import postman from "./Assets/sponsors/Postman.png"
 import polygon from "./Assets/sponsors/polygon.png"
 import redbull from "./Assets/sponsors/redbull.png"
+import Footer from './Components/footer/footer';
 
 function App() {
   const [binaryStream, setBinaryStream] = useState(generateRandomBinaryStream());
@@ -89,17 +90,17 @@ function App() {
     <section className='projects'>
       <h3 className='about-heading openSrc'>Our Open Source Projects</h3>
       <div className="repos">
-        <Repo src={branch} alt="repo1" title="lorem ipsum">
-        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        <Repo src={branch} alt="repo1" title="lorem ipsum" link="/">
+        this web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
         </Repo>
-        <Repo src={contribute} alt="repo1" title="lorem ipsum">
-        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        <Repo src={contribute} alt="repo1" title="lorem ipsum" link="/">
+        this web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
         </Repo>
-        <Repo src={pc} alt="repo1" title="lorem ipsum">
-        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        <Repo src={pc} alt="repo1" title="lorem ipsum" link="/">
+        this web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
         </Repo>
-        <Repo src={flower} alt="repo1" title="lorem ipsum">
-        his web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
+        <Repo src={flower} alt="repo1" title="lorem ipsum" link="/">
+        this web-app is aimed at frontend developers who wish to improve their skills by practicing coding UI elements like buttons, forms, etc., and figuring out the different ways these elements can be created by using various libraries and frameworks.        
         </Repo>
       </div>
     </section>
@@ -114,14 +115,10 @@ function App() {
               <img src = {jio} style={jiostyle}></img>
           </figure>
           <figure class="card2">
-
                   <img src= {git}/>
-
           </figure>
           <figure class="card2">
-
                   <img src= {mlh}/>
-
           </figure>
           <figure class="card2">
                   <img src= {postman}/>
@@ -135,6 +132,8 @@ function App() {
       </div>
       </div>
     </section>
+
+    <Footer/>
     </>
   );
 }
