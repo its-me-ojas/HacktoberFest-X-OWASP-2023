@@ -1,5 +1,5 @@
 .footer-distributed{
-	background: rgba(20, 0, 21, 0.092);
+	background: rgba(11, 6, 6, 0.874);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -91,7 +91,7 @@
 .footer-distributed .footer-center p span{
 	display:block;
 	font-weight: normal;
-	font-size:14px;
+	/* font-size:14px; */
 	line-height:2;
 }
 
@@ -200,4 +200,29 @@ img[src*="owasp"]{
 	max-height: 250px;
 	max-width: 250px;
 }
+}
+
+@media (min-width: 360px) and (max-width: 920px){
+	.footer-center > div{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		width: 100%;
+		font-size: 1.1rem;
+		text-align: left;
+	}
+
+.footer-center-span-text{
+	font-size: 1.25rem;
+}
+
+	.footer-right > .footer-company-about > span{
+		font-size:1.75rem;
+	}
+
+	.footer-right > .footer-company-about{
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
 }

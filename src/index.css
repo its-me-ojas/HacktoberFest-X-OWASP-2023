@@ -76,3 +76,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (min-width: 576px) and (max-width: 768px){
+  :root {
+    width: 100%;
+    background-color: #fff;
+    
+  }
+  
+}
