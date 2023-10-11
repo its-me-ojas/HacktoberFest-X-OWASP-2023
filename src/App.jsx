@@ -47,7 +47,6 @@ function App() {
 
   const jiostyle = {
     position: "relative", 
-    top:"-2rem",
     padding: "0rem"
   };
   return (

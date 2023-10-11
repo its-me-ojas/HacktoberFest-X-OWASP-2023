@@ -27,7 +27,7 @@ function Footer() {
 
       <div class="footer-right">
         <p class="footer-company-about">
-          <span>About the organization</span>
+          <span class="footer-right-span">About the organization</span>
           The team of OWASP Student Chapter, one of the gilt-edged coding
           society, involves ingenious mind solvers who are eager to make the
           world a better place to live in with their innovative techniques and

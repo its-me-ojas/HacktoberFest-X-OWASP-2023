@@ -223,6 +223,8 @@ h2 strong,
 .cards,
 .news {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dif {
@@ -293,7 +295,9 @@ h2:after {
   width: 278px;
   /* min-height: 120px; */
   /* max-height: auto; */
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .cards .card2,
