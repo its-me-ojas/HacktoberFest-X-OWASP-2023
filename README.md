@@ -1,8 +1,10 @@
-# React + Vite
+# HacktoberFest website for OWASP Student Chapter, TIET
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get Started:
+<ol>
+  <li>Open terminal.</li>
+  <li>Run <code>npm i -g yarn</code> in therminal to install yarn.<br/>This step is required to be done once only.</li>
+  <li>Navigate to your project directory in the terminal.</li>
+  <li>Run <code>yarn</code> or <code>yarn install</code> in terminal to install required packages.</li>
+  <li>Run <code>yarn dev</code> to start your project on localhost🚀</li>
+</ol>
