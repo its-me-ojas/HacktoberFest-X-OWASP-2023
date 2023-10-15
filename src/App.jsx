@@ -83,7 +83,7 @@ function App() {
         </MyButton>
 
       </div>
-      <a href="/pen/" class="discoButton"><span>Register for HacktoberFest</span></a>
+      <a href="/pen/" class="discoButton RegistHacto"><span>Register for HacktoberFest</span></a>
     </section>
 
     <section className='projects'>

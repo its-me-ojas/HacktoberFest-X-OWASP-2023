@@ -41,7 +41,7 @@ function Footer() {
           <img
             src="https://img.icons8.com/nolan/64/github.png"
             style={{
-              maxWidth: "40px",
+              maxWidth: "30px",
               maxHeight: "40px",
               paddingTop: "15px",
               marginRight: "10px",
