@@ -10,7 +10,7 @@ function Footer() {
       </div>
 
       <div class="footer-center">
-        <div>
+        <div className="contacting">
           <p>
             <span class="footer-center-span-text">Contact-Us</span>
             <a href="owasptu@gmail.com"> owasptu@gmail.com </a>
@@ -85,7 +85,7 @@ function Footer() {
           />
         </a>
       </div>
-    </footer>
+    </footer >
   );
 }
 export default Footer;
